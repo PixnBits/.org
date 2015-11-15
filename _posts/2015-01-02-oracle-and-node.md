@@ -30,7 +30,7 @@ From there, rather than modify system variables (again, just an experiment proje
 
 install.sh:
 
-{% highlight bash %}
+{% highlight bash linenos %}
 #!/bin/bash
 PROJECT_HOME=`pwd`
 
@@ -65,7 +65,7 @@ npm install
 
 and start.sh
 
-{% highlight bash %}
+{% highlight bash linenos %}
 #!/bin/bash
 
 # due to the use of Oracle Instant client, we need some system variables
@@ -82,7 +82,7 @@ node oracleTest.js
 
 As you can guess, I’m testing the connection in `oracleTest.js`
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 var oracle = require('oracle');
 
 var connString = "use your own";
@@ -111,7 +111,7 @@ pixnbits@silence:~/experimental-project$ ./start.sh
 
 Looks good! However, a simple `SELECT` is not so sunny
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 var oracle = require('oracle');
 
 var connString = "use your own";
@@ -165,7 +165,7 @@ Why? Well…db connections 101: always close the connection when you’re done.
 
 So, either
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
     function doRead(cb) {
         reader.nextRow(function(err, row) {
             if (err) return cb(err);
@@ -185,7 +185,7 @@ So, either
 
 or
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 oracle.connect(connectData, function(err, connection) {
     if (err) { console.log("Error connecting to db:", err); return; }
 

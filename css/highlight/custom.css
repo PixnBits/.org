@@ -1,0 +1,18 @@
+.highlight pre {
+  padding: 0.2rem;
+  margin: 0;
+
+  background-color: #333;
+  color: white;
+}
+.highlight > pre {
+  padding: 0;
+}
+
+.highlight .gutter.gl pre {
+  color: #C7C7C7;
+}
+
+.highlight .gutter.gl {
+  border-right: #5A5A5A thin solid;
+}

@@ -1,0 +1,7 @@
+# Outputting
+permalink: articles/:title
+defaults:
+  -
+    values:
+      layout: default
+

@@ -11,7 +11,7 @@ layout: default
       <a href="{{ post.url }}">
         {{ post.title }}
       </a>
-      <time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">
+      <time datetime="{{ post.date }}" itemprop="datePublished">
         ({{ post.date | date: "%Y/%-m/%-d" }})
       </time>
     </h4>

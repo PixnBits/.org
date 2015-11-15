@@ -1,5 +1,8 @@
 # Outputting
 permalink: articles/:title
+# don't rely on ruby & timezones (or just ruby)
+# https://github.com/jekyll/jekyll/issues/1069#issuecomment-77661605
+timezone: America/Phoenix
 defaults:
   -
     values:

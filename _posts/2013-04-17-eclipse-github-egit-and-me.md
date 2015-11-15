@@ -1,6 +1,6 @@
 ---
 title: Eclipse, GitHub, EGit, and Me
-date: 2013-04-17 10:20
+date: 2013-04-17 10:20 -0700
 summary: Any method that actually connected the remote GitHub repo to my local repo also, by the nature of Eclipse, also created a new child folder with the project there, rather than in the root directory. But then I found a solution.
 ---
 
